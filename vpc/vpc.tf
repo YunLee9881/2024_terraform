@@ -1,6 +1,6 @@
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "5.6.0"
+  version = "5.8.1"
 
   name = var.vpc_name
   cidr = var.cidr_block
@@ -24,9 +24,9 @@ module "vpc" {
   database_subnet_names      = var.database_subnet_names
   database_subnets           = var.database_subnets_cidr
   database_route_table_tags  = var.database_route_table_tags
-  database_subnet_group_name = var.database_subnet_group_name
+  # database_subnet_group_name = var.database_subnet_group_name
 
-  elasticache_subnet_group_name = var.elasticache_subnet_group_name
+  # elasticache_subnet_group_name = var.elasticache_subnet_group_name
 
 
 

@@ -1,6 +1,6 @@
 variable "vpc_name" {
   type    = string
-  default = "test-vpc"
+  default = "skills-vpc"
 
 }
 
@@ -75,14 +75,14 @@ variable "database_route_table_tags" {
 
 }
 
-variable "database_subnet_group_name" {
-  type    = string
-  default = "skills-db-subnet-group"
-}
+# variable "database_subnet_group_name" {
+#   type    = string
+#   default = "skills-db-subnet-group"
+# }
 
-variable "elasticache_subnet_group_name" {
-  type    = string
-  default = "skills-elasticache-subnet-group"
-}
+# variable "elasticache_subnet_group_name" {
+#   type    = string
+#   default = "skills-elasticache-subnet-group"
+# }
 
 
